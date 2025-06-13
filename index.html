@@ -3,148 +3,162 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Sophia Castillo - Freelance Tutoring</title>
+  <title>Sophia Castillo | Tutoring Services</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
+      font-family: 'Segoe UI', sans-serif;
       margin: 0;
       padding: 0;
-      color: #1f2937;
-      background-color: #f9fafb;
+      background: #fff;
+      color: #111;
+      line-height: 1.6;
     }
 
     header {
-      background-color: #1d4ed8;
-      color: white;
-      padding: 20px 40px;
+      background: #000;
+      color: #fff;
+      padding: 1rem 2rem;
       display: flex;
       justify-content: space-between;
       align-items: center;
     }
 
     nav a {
-      color: white;
+      color: #fff;
       margin-left: 20px;
       text-decoration: none;
-      font-weight: bold;
+      font-weight: 600;
     }
 
     .hero {
+      padding: 100px 20px;
       text-align: center;
-      padding: 80px 20px;
-      background: linear-gradient(to right, #3b82f6, #60a5fa);
-      color: white;
+      background: #f5f5f5;
     }
 
     .hero h1 {
-      font-size: 48px;
-      margin-bottom: 20px;
+      font-size: 2.8em;
+      margin-bottom: 0.5em;
     }
 
-    .hero p {
-      font-size: 20px;
-      margin-bottom: 30px;
+    .hero h2 {
+      font-weight: normal;
+      color: #333;
+      max-width: 700px;
+      margin: auto;
     }
 
-    .btn {
-      background-color: white;
-      color: #1d4ed8;
+    .hero a {
+      display: inline-block;
+      margin-top: 30px;
       padding: 12px 24px;
-      font-weight: bold;
+      background: #000;
+      color: #fff;
+      border-radius: 4px;
       text-decoration: none;
-      border-radius: 5px;
+      font-weight: bold;
     }
 
     section {
       padding: 60px 20px;
-      max-width: 1200px;
+      max-width: 1000px;
       margin: auto;
     }
 
-    .section-title {
+    h2 {
+      font-size: 2em;
+      margin-bottom: 20px;
       text-align: center;
-      margin-bottom: 40px;
-      font-size: 32px;
-      color: #111827;
     }
 
-    .columns {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-around;
-      gap: 20px;
+    .subjects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 30px;
+      margin-top: 40px;
     }
 
-    .column {
-      background-color: white;
+    .subject {
+      border: 1px solid #ddd;
       padding: 20px;
-      border-radius: 8px;
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-      flex: 1 1 250px;
-      text-align: center;
+      border-radius: 6px;
+      background: #fafafa;
     }
 
     footer {
-      background-color: #1f2937;
-      color: white;
+      background: #000;
+      color: #fff;
       text-align: center;
       padding: 20px;
+      margin-top: 60px;
+    }
+
+    a {
+      color: #000;
     }
   </style>
 </head>
 <body>
+
   <header>
-    <div class="logo">Sophia Castillo</div>
+    <div class="logo"><strong>Sophia Castillo</strong></div>
     <nav>
       <a href="#">Home</a>
       <a href="#about">About</a>
-      <a href="#subjects">Subjects</a>
+      <a href="#specialties">Specialties</a>
       <a href="#contact">Contact</a>
-      <a href="resume.html">Resume</a>
     </nav>
   </header>
 
-  <div class="hero">
-    <h1>Private Tutoring with Sophia Castillo</h1>
-    <p>Helping students gain confidence and excel in their studies—online or in-person in San Luis Obispo County.</p>
-    <a href="#contact" class="btn">Schedule a Free Consultation</a>
-  </div>
+  <section class="hero">
+    <h1>Private Tutoring by Sophia Castillo</h1>
+    <h2>Personalized academic coaching to help students build confidence and achieve their individual academic goals.</h2>
+    <a href="#about">Learn More!</a>
+  </section>
 
   <section id="about">
-    <h2 class="section-title">About Me</h2>
-    <p style="text-align: center; max-width: 800px; margin: auto;">
-      I’m a Master’s graduate and experienced educator offering one-on-one tutoring in subjects like English, Writing, Anthropology, Social Sciences, and Exam Prep. I personalize every session based on your goals and learning style.
+    <h2>About Me</h2>
+    <p style="max-width: 800px; margin: auto; text-align: center;">
+      I’ve spent the past <strong>eight years</strong> as a private tutor and <strong>two years</strong> as a college educator.  
+      I earned my <strong>Master of Arts in Anthropology</strong> from <strong>San Diego State University</strong>, graduating <em>summa cum laude</em> with a perfect 4.0 GPA, and hold a <strong>BA in Biological Anthropology</strong> with a minor in Film & Electronic Media from <strong>California State University, Long Beach</strong>.  
+      I now offer one-on-one tutoring for elementary through high school students, breaking down complex ideas into clear, engaging lessons tailored to each learner’s style and goals.
     </p>
   </section>
 
-  <section id="subjects">
-    <h2 class="section-title">Subjects I Tutor</h2>
-    <div class="columns">
-      <div class="column">
+  <section id="specialties">
+    <h2>Specialties</h2>
+    <div class="subjects">
+      <div class="subject">
         <h3>English & Writing</h3>
-        <p>Grammar, essay structure, creative writing, editing, and reading comprehension.</p>
+        <p>Grammar, essay structure, creative writing, reading comprehension, and college admission essay help.</p>
       </div>
-      <div class="column">
+      <div class="subject">
         <h3>Anthropology & Social Sciences</h3>
-        <p>University-level coursework, theory review, and assignment coaching.</p>
+        <p>Theory review, research methods, and assignment support.</p>
       </div>
-      <div class="column">
-        <h3>Study Skills & Test Prep</h3>
-        <p>Organizational strategies, time management, and exam preparation techniques.</p>
+      <div class="subject">
+        <h3>Test Prep & Study Skills</h3>
+        <p>Time management, exam strategies, and personalized study plans.</p>
+      </div>
+      <div class="subject">
+        <h3>Biological Sciences</h3>
+        <p>Intro biology, genetics, ecology, and lab report coaching.</p>
       </div>
     </div>
   </section>
 
   <section id="contact">
-    <h2 class="section-title">Contact Me</h2>
-    <p style="text-align: center; max-width: 600px; margin: auto;">
-      Ready to get started? Email me at <a href="mailto:sophia.castillo.tutor@gmail.com">sophia.castillo.tutor@gmail.com</a><br />
-      Or text/call: (805) 309-4860
+    <h2>Contact</h2>
+    <p style="text-align: center;">
+      Ready to get started?<br>
+      Email me at <a href="mailto:sophia.guthrie.castillo@gmail.com">sophia.guthrie.castillo@gmail.com</a><br>
+      Or call/text: <strong>(805) 309-4860</strong>
     </p>
   </section>
 
   <footer>
-    &copy; 2025 Sophia Castillo | Freelance Tutoring in San Luis Obispo County
+    &copy; 2025 Sophia Castillo. All rights reserved.
   </footer>
+
 </body>
 </html>
